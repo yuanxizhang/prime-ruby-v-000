@@ -4,9 +4,10 @@ def prime?(n)
     false 
   else
     3..n.each do |x| 
-      if n % x == 0 && x != n
-        return false
-      else
-        return true
-   end
+        if n % x == 0 && x != n
+          return false
+        else
+          return true
+    end  
+  end
 end
