@@ -1,12 +1,8 @@
 # check if an integer is prime, return true or false
 def prime?(n)
 
-    2..n.each do |x| 
-        if n % x == 0 && x != n
-          return false
-        else
-          return true
-        end
-    end  
+  return false if num <= 1
+  Math.sqrt(num).to_i.downto(2).each {|i| return false if num % i == 0}
+  true
   
 end
