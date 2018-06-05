@@ -1,4 +1,4 @@
-# return true or false
+# check if an integer is prime, return true or false
 def prime?(n)
 
     3..n.each do |x| 
