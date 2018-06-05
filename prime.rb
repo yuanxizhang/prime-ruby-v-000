@@ -1,7 +1,7 @@
 # check if an integer is prime, return true or false
 def prime?(n)
 
-  return if num <= 1
-  (2..Math.sqrt(num)).none? { |i| (num % i).zero? }
+  Math.sqrt(num).floor.downto(2).each {|i| return false if num % i == 0}
+  true
   
 end
